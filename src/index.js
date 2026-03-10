@@ -6,7 +6,6 @@ const app = express();
 const PORT = 8080;
 
 const DATA_DIR = path.join(import.meta.dirname, "../data");
-const CSV_DIR = path.join(DATA_DIR, "csv");
 
 app.get("/*", async (req, res) => {
   try {
