@@ -7,6 +7,10 @@ This simple server returns the contents of the files inside data
 ```bash
 npm install
 npm run dev 
+
+# build it
+npm run types-check
+npm run build
 ```
 
 # Example calls

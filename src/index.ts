@@ -1,4 +1,5 @@
 import express from "express";
+import type { Response, Request } from "express";
 import fs from "fs";
 import path from "path";
 
@@ -7,7 +8,7 @@ const PORT = 8080;
 
 const DATA_DIR = path.join(import.meta.dirname, "../data");
 
-app.get("/*", async (req, res) => {
+app.get("/*", async (req: Request, res: Response) => {
   try {
     let filePath;
 
